@@ -1,0 +1,60 @@
+body{
+    background-color: #F8F9D7;
+}
+
+a {
+    text-decoration: none; 
+}
+
+#find_pw_box{
+    margin: 200px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #C4D7E0;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    padding-top: 50px;
+}
+
+#scheduler{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+}
+
+#find_pw{
+    color: black;
+    text-align: center;
+    font-size: 50px;
+}
+
+table{
+    border-spacing: 10px 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.info{
+    font-size: 20px;
+    color: black;
+}
+
+.info_value{
+    width: 300px;
+    height: 35px;
+    border: white;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+#find_pw_button{
+    margin-top: 10px;
+    width: calc(100% - 10px);
+    height: 40px;
+    background-color: #6E85B7;
+    border: #6E85B7;
+    font-size: 18px;
+    border-radius: 5px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHEDULER</title>
+    <link rel="stylesheet" type="text/css" href="schedulerSignup.css">
+</head>
+<body>
+    <div id="signup_box">
+        <a id="scheduler" href="schedulerLogin.html">SCHEDULER</a>
+        <a id="signup" href="schedulerSignup.html">회원가입</a>
+        <form action="schedulerSignupCheck.html" onsubmit="return signupCheckEvent()">
+            <table>
+                <tr>
+                    <td class="info">이름</td>
+                    <td>
+                        <input class="info_value" id="name_value" type="text" name="name_value" placeholder="김재연">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="info">아이디</td>
+                    <td>
+                        <div id="id_value_box">
+                            <input class="info_value" id="id_value" type="text" name="id_value" placeholder="angelssjj">
+                            <input id="id_overlap_check" type="button" value="중복확인" onclick="idOverlapCheck()">
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="info">비밀번호</td>
+                    <td>
+                        <input class="info_value" id="password_value" type="password" name="password_value" placeholder="ssjj1320!">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="info">비밀번호 확인</td>
+                    <td>
+                        <input class="info_value" id="password_check_value" type="password" name="password_value" placeholder="ssjj1320!">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="info">연락처</td>
+                    <td>
+                        <input class="info_value" id="phone_value" type="text" name="phone_value" placeholder="01099000726">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="info">이메일</td> 
+                    <td>
+                        <input class="info_value" id="email_value" type="text" name="email_value" placeholder="angelssjj1320@naver.com">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="info">부서</td>
+                    <td class="radio_box">
+                        <input type="radio" class="department_value" name="department_value" value="개발">
+                        <span class="info_option">개발</span>
+                        <input type="radio" class="department_value" name="department_value" value="교육">
+                        <span class="info_option">교육</span>
+                        <input type="radio" class="department_value" name="department_value" value="마케팅">
+                        <span class="info_option">마케팅</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="info">직급</td>
+                    <td class="radio_box">
+                        <input type="radio" class="position_value" name="position_value" value="사원">
+                        <span class="info_option">사원</span>
+                        <input type="radio" class="position_value" name="position_value" value="팀장">
+                        <span class="info_option">팀장</span>
+                        <input type="radio" class="position_value" name="position_value" value="관리자">
+                        <span class="info_option">관리자</span>
+                    </td>
+                </tr>
+            </table>
+            <input id="signup_button" type="submit" value="회원가입">
+        </form>
+    </div>
+
+    <script src="schedulerSignup.js"></script>
+
+</body>
+</html>

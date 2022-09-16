@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHEDULER</title>
+    <link rel="stylesheet" type="text/css" href="schedulerFindPw.css">
+</head>
+<body>
+    <div id="find_pw_box">
+        <a id="scheduler" href="schedulerLogin.html">SCHEDULER</a>
+        <a id="find_pw" href="schedulerFindPw.html">PW찾기</a>
+        <form action="schedulerFindPwCheck.html" onsubmit="return findPwCheckEvent()">
+            <table>
+                <tr>
+                    <td class="info">이름</td>
+                    <td>
+                        <input class="info_value" id="name_value" type="text" name="name_value" placeholder="김재연">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="info">연락처</td>
+                    <td>
+                        <input class="info_value" id="phone_value" type="text" name="phone_value" placeholder="01099000726">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="info">아이디</td>
+                    <td>
+                        <input class="info_value" id="id_value" type="text" name="id_value" placeholder="angelssjj">
+                    </td>
+                </tr>
+            </table>
+            <input id="find_pw_button" type="submit" value="PW 찾기">
+        </form>
+    </div>
+
+    <script src="schedulerFindPw.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+body{
+    background-color: #F8F9D7;
+}
+
+a {
+    text-decoration:none; 
+}
+
+#login_box{
+    margin: 200px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #C4D7E0;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    padding-top: 50px;
+}
+
+#scheduler{
+    color: black;
+    text-align: center;
+    font-size: 70px;
+}
+
+#login{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.value{
+    width: 300px;
+    height: 35px;
+    border: #ffffff;
+    margin: 5px 0px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+#login_button{
+    width: 306px;
+    height: 40px;
+    margin: 10px 0px;
+    background-color: #6E85B7;
+    border: #6E85B7;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+#find{
+    width: 308px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#sign_up{
+    color: black;
+}
+
+#find_id{
+    color: black;
+}
+
+#find_pw{
+    color: black;
+}
+
+@media (max-width: 750px) {
+    #login_box{
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #C4D7E0;
+        width: 500px;
+        height: 500px;
+        border-radius: 10px;
+        padding-top: 50px;
+    }
+}

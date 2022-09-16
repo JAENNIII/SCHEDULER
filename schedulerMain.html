@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHEDULER</title>
+    <link rel="stylesheet" type="text/css" href="schedulerMain.css">
+</head>
+<body>
+    <header>
+        <div id="header_left">
+            <input id="menu" src="menu.png" type="image" onclick="clickEvent(0)">
+            <a id="scheduler" href="schedulerMain.html">SCHEDULER</a>
+        </div>
+        <div id="header_right">
+            <input id="logout" type="button" value="로그아웃" onclick="location.href='schedulerLogin.html'">
+        </div>
+    </header>
+    <nav id="nav" class="click_box">
+        <div id="profile">
+            김재연 관리자님
+        </div>
+        <div class="department_box" id="department_development_box">
+            <input class="department" id="department_development" type="button" value="개발부서" onclick="clickEvent(1)">
+            <div class="click_box" id="department_development_member_box">
+                <div class="member">안태현 팀장</div>
+                <div class="member">이민영 팀원</div>
+                <div class="member">김성언 팀원</div>
+            </div>
+        </div>
+        <div class="department_box" id="department_education_box">
+            <input class="department" id="department_education" type="button" value="교육부서" onclick="clickEvent(2)">
+            <div class="click_box" id="department_education_member_box">
+                <div class="member">이민영 팀장</div>
+                <div class="member">김성언 팀원</div>
+                <div class="member">안태현 팀원</div>
+            </div>
+        </div>
+        <div class="department_box" id="department_marketing_box">
+            <input class="department" id="department_marketing" type="button" value="마케팅부서" onclick="clickEvent(3)">
+            <div class="click_box" id="department_marketing_member_box">
+                <div class="member">김성언 팀장</div>
+                <div class="member">안태현 팀원</div>
+                <div class="member">이민영 팀원</div>
+            </div>
+        </div>
+    </nav>
+    <main id="main">
+        <div id="year_month_box">
+            <div class="arrow" id="arrow_left" onclick="arrowEvent(0)"></div>
+            <div id="year_month">
+                <span id="year_value">2022</span>
+                <span id="year">년</span>
+                <span id="month_value">9</span>
+                <span id="month">월</span>
+            </div>
+            <div class="arrow" id="arrow_right" onclick="arrowEvent(1)"></div>
+        </div>
+        <div id="plus_box">
+            <input id="plus_button" src="plus.png" type="image" onclick="clickEvent(4)">
+            <div class="click_box" id="plus_window">
+                <div id="datetime_box">
+                    <input class="plan_datetime" id="date" type="date">
+                    <input class="plan_datetime" id="time" type="time">
+                </div>
+                <div id="plan_info_box">
+                    <input id="plan_contents" type="text" placeholder="일정을 입력해주세요.">
+                </div>
+                <div id="completion_box">
+                    <input id="completion_button" type="button" value="완료" onclick="completionEvent(0)">
+                </div>
+            </div>
+        </div>
+        <div id="plan_box">
+            <div class="plan">
+                <div class="day">3일</div>
+                <div class="day_plan_box">
+                    <div class="day_plan">
+                        <div class="time">오전 00:00</div>
+                        <del class="plan_contents">김재연 생일</del>
+                        <div class="change_delete">
+                            <input class="change" src="change.png" type="image" onclick="changeEvent(0)">
+                            <input class="delete" src="delete.png" type="image" onclick="deleteEvent()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="day">16일</div>
+                <div class="day_plan_box">
+                    <div class="day_plan">
+                        <div class="time">오전 08:00</div>
+                        <div class="plan_contents">미니스탑 알바</div>
+                        <div class="change_delete">
+                            <input class="change" src="change.png" type="image" onclick="changeEvent(1)">
+                            <input class="delete" src="delete.png" type="image" onclick="deleteEvent()">
+                        </div>
+                    </div>
+                    <div class="day_plan">
+                        <div class="time">오후 04:00</div>
+                        <div class="plan_contents">스테이지어스 웹기초 과정 9주차 수업</div>
+                        <div class="change_delete">
+                            <input class="change" src="change.png" type="image" onclick="changeEvent(2)">
+                            <input class="delete" src="delete.png" type="image" onclick="deleteEvent()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="day">17일</div>
+                <div class="day_plan_box">
+                    <div class="day_plan">
+                        <div class="time">오후 02:00</div>
+                        <div class="plan_contents">약속 임효원</div>
+                        <div class="change_delete">
+                            <input class="change" src="change.png" type="image" onclick="changeEvent(3)">
+                            <input class="delete" src="delete.png" type="image" onclick="deleteEvent()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="day">18일</div>
+                <div class="day_plan_box">
+                    <div class="day_plan">
+                        <div class="time">오후 06:00</div>
+                        <div class="plan_contents">약속 고양이 언니</div>
+                        <div class="change_delete">
+                            <input class="change" src="change.png" type="image" onclick="changeEvent(4)">
+                            <input class="delete" src="delete.png" type="image" onclick="deleteEvent()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="schedulerMain.js"></script>
+
+</body>
+</html>
